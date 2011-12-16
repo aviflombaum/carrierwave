@@ -1,3 +1,3 @@
 source :rubygems
-gem "fog", :git => "git@github.com:autohaus24/fog.git"
+gem "fog", :git => "git://github.com/fog/fog.git"
 gemspec
