@@ -150,6 +150,8 @@ module CarrierWave
       #     my_uploader.url(:thumb, :small) # => /path/to/my/thumb_small_uploader.gif
       #     my_uploader.url(:query => {"response-content-disposition" => "attachment"}) 
       #     # => https://s3.amazonaws.com/carrierwave1323435530private/uploads/private.txt?AWSAccessKeyId=AKIAJXXVLMTYDJBPG5UA&Signature=wRqaa49WOpEWfuzWejpDyRcINN4%3D&Expires=1323436551
+      #     my_uploader.url(:version, :sub_version, :query => {"response-content-disposition" => "attachment"}) 
+      #     # => https://s3.amazonaws.com/carrierwave1323435530private/uploads/version_subversion_private.txt?AWSAccessKeyId=AKIAJXXVLMTYDJBPG5UA&Signature=wRqaa49WOpEWfuzWejpDyRcINN4%3D&Expires=1323436551
       #
       # === Parameters
       #
