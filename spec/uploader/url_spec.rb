@@ -36,7 +36,7 @@ describe CarrierWave::Uploader do
       @uploader.stub!(:file).and_return(StorageX::File.new)
       lambda { @uploader.url }.should_not raise_error
     end
-
+    
     it "should not raise ArgumentError when versions version exists" do
       @uploader_class.version(:thumb)
       lambda { @uploader.url(:thumb) }.should_not raise_error(ArgumentError)
